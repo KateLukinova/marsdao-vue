@@ -1,0 +1,159 @@
+@import "utils/libs";
+@import "utils/vars";
+@import "utils/mixins";
+@import "utils/fonts";
+@import "utils/reset";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap');
+
+html {
+  line-height: $mainLineHeight;
+  font-size: $mainFontSize;
+  color: $mainFontColor;
+  height: 100%;
+  width: 100vw;
+  @media screen and (max-width: $desktopWidth) {
+    font-size: 16px;
+  }
+  @media screen and (max-width: $tableWidth) {
+    font-size: 15px;
+  }
+  @media screen and (max-width: $phoneWidth) {
+    font-size: 14px;
+  }
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: $mainFont;
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  background-color: #E5E5E5;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 143px;
+  color: #FFFFFF;
+  line-height: 1.2;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 80px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  z-index: 4;
+  text-align: center;
+}
+h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: white;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.fullpage {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+}
+
+.container {
+  width: 90%;
+  max-width: 1620px;
+  margin: auto;
+}
+
+@media (max-width: 1366px) {
+  p {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 1024px) {
+  h2 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 990px) {
+  h2 {
+    font-size: 40px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-width: 640px) {
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+}
