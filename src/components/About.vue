@@ -1,5 +1,5 @@
 <template>
-  <section id="about-section" class="fullpage">
+  <div id="about-section">
     <div class="about-page">
       <div class="content-row">
         <div class="content-img">
@@ -27,7 +27,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>

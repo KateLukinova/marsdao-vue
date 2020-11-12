@@ -34,8 +34,8 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow: hidden;
   background-color: #E5E5E5;
+  overflow-x: hidden;
 }
 
 *,
@@ -107,16 +107,38 @@ p {
   font-weight: 400;
 }
 
-.fullpage {
-  width: 100%;
-  min-height: 100vh;
-  height: auto;
-}
 
 .container {
   width: 90%;
   max-width: 1620px;
   margin: auto;
+}
+
+.m-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #FA973B;
+  min-width: 240px;
+  box-shadow: 5px 5px 12px #00000029;
+  border-radius: 40px;
+  min-height: 65px;
+  margin-bottom: 150px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 58px;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  &:hover {
+    transform: scale(1.1);
+    &:after {
+      display: none;
+    }
+  }
 }
 
 @media (max-width: 1366px) {
@@ -155,5 +177,16 @@ p {
 
   p {
     font-size: 16px;
+  }
+
+  .m-btn {
+    margin-bottom: 0;
+    margin-top: 25px;
+    line-height: 1;
+    font-size: 30px;
+    min-height: 45px;
+    min-width: 200px;
+    height: 45px;
+    width: 200px;
   }
 }

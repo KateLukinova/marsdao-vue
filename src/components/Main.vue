@@ -1,7 +1,7 @@
 <template>
   <div>
     <MHeader></MHeader>
-    <section class="main-page fullpage">
+    <div class="main-page">
       <MFooter></MFooter>
       <div class="parallax-wrap">
         <div class="orbits" id="orbits" data-offset="90">
@@ -66,8 +66,9 @@
             </div>
           </div>
         </div>
+        <a href="#" class="m-btn">join</a>
       </div>
-    </section>
+    </div>
     <chart></chart>
     <about></about>
   </div>
@@ -321,7 +322,7 @@
       font-family: 'Roboto', sans-serif;
       font-size: 35px;
       line-height: 1.2;
-      color: #EF5845;
+      color: #5A92FF;
       font-weight: 900;
     }
 
@@ -444,6 +445,10 @@
 
     h3 {
       font-size: 24px;
+    }
+
+    .main-page {
+      padding-bottom: 175px;
     }
   }
 

@@ -1,5 +1,5 @@
 <template>
-  <section class="fullpage">
+  <div class="full-page">
     <MFooter></MFooter>
     <div class="chart-section" id="chart-section">
       <h2 class="h2-big-red">MRQ PRICE CHART</h2>
@@ -9,7 +9,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -54,7 +54,7 @@
 
 <style lang="scss" scoped>
 
-  .fullpage {
+  .full-page {
     position: relative;
     display: flex;
     justify-content: center;
