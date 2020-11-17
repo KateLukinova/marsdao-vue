@@ -413,6 +413,7 @@
   @media (max-width: 640px) {
     .block-column {
       align-items: flex-end;
+      padding-bottom: 90px;
       .block-column-left, .block-column-right {
         height: auto;
         align-items: flex-end;
@@ -430,7 +431,7 @@
           }
           &.big {
             position: absolute;
-            bottom: 13vh;
+            bottom: 25vh;
             span {
               font-size: 50px;
             }
@@ -448,7 +449,7 @@
     }
 
     .main-page {
-      padding-bottom: 175px;
+      padding-bottom: 75px;
     }
   }
 
@@ -467,6 +468,7 @@
 
     .block-center {
       padding-top: 100px;
+      padding-bottom: 25px;
     }
 
     h2 {
